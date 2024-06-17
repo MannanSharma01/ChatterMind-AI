@@ -1,0 +1,170 @@
+body {
+  padding:0;
+  margin: 0;
+  background-color: #061424;
+  padding-top: 110px;
+}
+
+
+/*header*/
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
+  animation: spin 5s linear infinite;
+}
+
+.header-title {
+  text-decoration: none;
+}
+
+@media(max-width: 384px) {
+  .header-title {
+    display: none;
+  }
+}
+
+.header-navigation-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.15s linear;
+}
+.header-navigation-btn:hover {
+  opacity: 0.8;
+}
+.header-navigation-btn:active {
+  opacity: 0.6;
+}
+
+
+/*login, signup*/
+
+@media(min-width: 900px) {
+  .login-signup-page-robot-image {
+    width: 420px;
+  }
+}
+@media(max-width: 900px) and (min-width: 752px) {
+  .login-signup-page-robot-image {
+    width: 380px;
+  }
+}
+@media(max-width: 752px) {
+  .login-signup-page-robot-image {
+    display: none;
+  }
+}
+
+
+/*chat*/
+@media(max-width: 900px) {
+  pre, code {
+    white-space: normal !important;
+    word-break: break-word !important;
+  
+  }
+}
+
+@media(max-width: 196px) {
+  pre, code {
+    padding: 0 !important;
+  }
+}
+
+/*home component*/
+#home-page-chat-img {
+  animation: dynamic-glow 1s ease-in-out infinite alternate;
+}
+
+@media(max-width: 1140px) {
+  #home-page-light-robot {
+    height: 500px !important;
+    width: 551.463px !important;
+  }
+}
+
+@media(max-width: 1024px) {
+  #home-page-light-robot {
+    height: 350px !important;
+    width: 386.025px !important;
+  }
+}
+
+@media(max-width: 848px) {
+  #home-page-light-robot {
+    display: none !important;
+  }
+  #home-page-chat-img {
+    width: 510px !important;
+    height: 314.550px !important;
+  }
+}
+
+@media(max-width: 560.02px) {
+  #home-page-chat-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/*FrontendError component*/
+
+.error-robot {
+  animation: move-up-down 2s linear infinite;
+}
+
+@media(max-width: 700px) {
+  .error-robot {
+    width: 250px !important;
+    height: 300px !important;
+  }
+}
+
+@media(max-width: 300px) {
+  .error-robot {
+    width: 100% !important;
+    height: 240px !important;
+  }
+}
+
+
+/*keyframes*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dynamic-glow {
+  from {
+    box-shadow: -5px -5px 110px #64f3d5
+  } to {
+    box-shadow: -5px -5px 85px #64f3d5
+  }
+}
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px); 
+  }
+  50% {
+    transform: translateY(0px); 
+  }
+  75% {
+    transform: translateY(10px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
