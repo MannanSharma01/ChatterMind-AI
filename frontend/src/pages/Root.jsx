@@ -17,7 +17,6 @@ export default function Root() {        // this is the template for all other pa
   return (              
     <div id="Template">         
       <Header/>
-      <a href="https://chattermind-ai.onrender.com/abc">go</a>
       <Outlet/>
     </div>
   )

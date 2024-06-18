@@ -33,7 +33,7 @@ export default function Header() {
       <Toolbar sx={{height: "77px"}}>     {/**pehle sara time ye bhi likha hua tha yaha pe---border:"3px solid red" */}
 
         <Logo/>
-
+        <a href="https://chattermind-ai.onrender.com/abc" style={{color: "white"}}>go</a>
         <Link to="/home" className="header-title">
           <Typography variant="h5" sx={{fontWeight: "400", display:"inline-block"}}>
             ChatterMind AI
