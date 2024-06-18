@@ -52,6 +52,9 @@ const sessionOptions = {
 } ;
 
 // middlewares
+app.get("/abc", (req, res) => {      //
+  res.send("hi guys. how're you all?");    //
+});     //
 app.use(cors({          /** CHANGE TO BE MADE IN THE URL */
   origin: "https://chattermindai-mannan-sharmas-projects.vercel.app",
   credentials: true
