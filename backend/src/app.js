@@ -53,7 +53,7 @@ const sessionOptions = {
 
 // middlewares
 app.use(cors({          /** CHANGE TO BE MADE IN THE URL */
-  origin: "https://localhost:5173",
+  origin: "https://chattermindai-mannan-sharmas-projects.vercel.app/",
   credentials: true
 }));
 app.use(express.json());
