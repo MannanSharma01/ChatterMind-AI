@@ -13,7 +13,7 @@ import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
 import {createTheme, ThemeProvider} from "@mui/material";
 
-axios.defaults.baseURL = "https://localhost:5000/api/v1";    /** TO BE CHANGED */
+axios.defaults.baseURL = "https://chattermind-ai.onrender.com/api/v1";    /** TO BE CHANGED */
 axios.defaults.withCredentials = true;
 
 const theme = createTheme({

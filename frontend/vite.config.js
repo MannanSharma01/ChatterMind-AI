@@ -15,8 +15,6 @@ function replaceAll(str) {
 const KEY_PEM = process.env.VITE_APP_KEY_PEM;
 const CERT_PEM = process.env.VITE_APP_CERT_PEM;
 
-console.log(KEY_PEM);
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
