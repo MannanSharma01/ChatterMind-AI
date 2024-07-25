@@ -52,6 +52,12 @@ const sessionOptions = {
 } ;
 
 // middlewares
+
+app.use((req, res, next) => {
+  console.log(`${req.method}------${req.url}`);
+  next();
+})
+
 app.use(cors({
   origin: "https://chattermindai-mannan-sharmas-projects.vercel.app",
   credentials: true
@@ -74,6 +80,9 @@ app.get("/abc", (req, res) => {      //
 });     //
 app.use("/api/v1", appRouter);
 
-
+app.use((err, req, res, next) => {
+  console.log("ERROR STACK:----", err.stack);
+  res.status(500).send("something broke");
+})
 
 export default server;
