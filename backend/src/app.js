@@ -52,9 +52,6 @@ const sessionOptions = {
 } ;
 
 // middlewares
-app.get("/abc", (req, res) => {      //
-  res.send("hi guys. how're you all?");    //
-});     //
 app.use(cors({
   origin: "https://chattermindai-mannan-sharmas-projects.vercel.app",
   credentials: true
@@ -72,6 +69,9 @@ passport.use( new LocalStrategy(User.authenticate()) );
 passport.serializeUser( User.serializeUser() );
 passport.deserializeUser( User.deserializeUser() );
 
+app.get("/abc", (req, res) => {      //
+  res.send("hi guys. how're you all?");    //
+});     //
 app.use("/api/v1", appRouter);
 
 
